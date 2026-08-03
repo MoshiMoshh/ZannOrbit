@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-background: #101010;
+  --color-surface: #171717;
+  --color-glass: rgba(255, 255, 255, 0.05);
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-primary: #ffffff;
+  --color-secondary: #a1a1aa;
+  --color-accent: #d4d4d8;
+  --color-neutral-state: #e5e5e5;
+  --color-error: #ef4444; /* ASUMSI: warna error merah untuk validasi form */
+
+  /* Font Families - ASUMSI: Geist Sans dan Geist Mono */
+  --font-sans: "Geist Sans", "Inter", sans-serif;
+  --font-mono: "Geist Mono", monospace;
+
+  /* Radius */
+  --radius-default: 24px;
+
+  /* Container */
+  --container-max: 1320px;
+
+
+  /* Breakpoints */
+  --breakpoint-sm: 390px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1440px;
+  --breakpoint-3xl: 1920px;
+}
+
+/* Base Styles */
+@layer base {
+  body {
+    @apply bg-background text-primary font-sans antialiased overflow-x-hidden;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-background);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-surface);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-secondary);
+}
+
+/* Lenis Recommended CSS */
+html.lenis, html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
