@@ -146,13 +146,13 @@ export function Hero() {
           </div>
 
           {/* Right Column - Complex Layout from Image */}
-          <div className="relative lg:col-span-7 h-[500px]">
-            <RevealOnScroll y={40} duration={1} className="w-full h-full">
+          <div className="relative lg:col-span-7 h-auto lg:h-[500px] flex flex-col lg:block mt-12 lg:mt-0 w-full overflow-hidden lg:overflow-visible">
+            <RevealOnScroll y={40} duration={1} className="w-full h-full flex flex-col lg:block relative">
               
-              <GlassCard className="absolute left-0 top-1/2 -translate-y-1/2 w-[85%] h-[90%] rounded-2xl overflow-visible z-10 flex flex-col justify-center p-10" opacity={0.03} blur={12}>
+              <GlassCard className="relative lg:absolute lg:left-0 lg:top-1/2 lg:-translate-y-1/2 w-full lg:w-[85%] h-auto lg:h-[90%] rounded-2xl overflow-visible z-10 flex flex-col justify-center p-6 lg:p-10" opacity={0.03} blur={12}>
                 
                 {/* Text Block */}
-                <div className="max-w-[280px]">
+                <div className="w-full lg:max-w-[280px]">
                   <h3 className="text-xl md:text-2xl text-secondary leading-relaxed mb-6">
                     Building digital<br/>
                     experiences with<br/>
@@ -167,7 +167,7 @@ export function Hero() {
                   </div>
 
                   {/* Grid */}
-                  <div className="grid grid-cols-4 gap-x-3 gap-y-4">
+                  <div className="grid grid-cols-4 sm:grid-cols-8 lg:grid-cols-4 gap-x-3 gap-y-4">
                     {TECH_ICONS.map((tech) => (
                       <div key={tech.name} className="flex flex-col items-center gap-1.5 group">
                         <div className="w-12 h-12 rounded-xl bg-black/40 border border-white/5 flex items-center justify-center transition-all duration-300 group-hover:bg-white/5 group-hover:scale-110">
@@ -185,8 +185,8 @@ export function Hero() {
 
                 {/* Floating Laptop/Code Editor on the right */}
                 <motion.div 
-                  className="absolute -right-[20%] top-1/2 -translate-y-1/2 w-[85%] min-w-[320px] z-20"
-                  animate={{ y: ["-50%", "-52%", "-50%"] }}
+                  className="relative lg:absolute lg:-right-[20%] lg:top-1/2 lg:-translate-y-1/2 w-full lg:w-[85%] lg:min-w-[320px] z-20 mt-8 lg:mt-0"
+                  animate={{ y: ["0%", "-2%", "0%"] }}
                   transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
                 >
                   <GlassCard className="rounded-xl overflow-hidden shadow-2xl border-white/10" opacity={0.05} blur={20}>
@@ -229,7 +229,7 @@ export function Hero() {
 
                 {/* Floating "Available" badge */}
                 <motion.div
-                  className="absolute -right-4 bottom-8 z-30"
+                  className="relative lg:absolute lg:-right-4 lg:bottom-8 z-30 mt-8 lg:mt-0 self-start lg:self-auto"
                   animate={{ y: [0, 8, 0] }}
                   transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 1 }}
                 >
