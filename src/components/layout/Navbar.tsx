@@ -13,8 +13,8 @@ const NAV_ITEMS = [
   { label: 'Home', href: '#home' },
   { label: 'About', href: '#about' },
   { label: 'Skills', href: '#skills' },
-  { label: 'Experience', href: '#experience' },
   { label: 'Projects', href: '#projects' },
+  { label: 'Experience', href: '#experience' },
   { label: 'Contact', href: '#contact' },
 ];
 
@@ -99,7 +99,7 @@ export function Navbar() {
         
         <div className="flex items-center justify-between px-6 lg:px-8 py-4 transition-all duration-500" id="nav-inner">
           <a href="#home" className="text-xl font-bold tracking-tight text-primary hover:opacity-80 transition-opacity">
-            ZannEnemies
+            ZannOrbit
           </a>
 
           <div className="hidden lg:flex items-center gap-2">

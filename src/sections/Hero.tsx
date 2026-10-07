@@ -113,10 +113,7 @@ export function Hero() {
           
           {/* Left Column */}
           <div className="flex flex-col gap-6 lg:col-span-5 lg:pl-12 xl:pl-16">
-            <RevealOnScroll>
-              <Badge label="HELLO WORLD." />
-            </RevealOnScroll>
-            
+
             <h1 
               ref={headingRef}
               className="text-6xl md:text-7xl lg:text-[90px] font-bold leading-[1.05] tracking-tight"
