@@ -11,7 +11,7 @@ export function SEO({
   title = 'Zann. — Fullstack Developer',
   description = 'Fullstack developer — web cepat, automasi payment gateway, dan integrasi AI.',
   url = 'https://zannvoid.my.id',
-  image = 'https://zannvoid.my.id/og-image.jpg',
+  image = 'https://zannvoid.my.id/images/ZannEver.png',
 }: SEOProps) {
   return (
     <Helmet>

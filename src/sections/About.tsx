@@ -54,9 +54,9 @@ export function About() {
                 <div className="w-full max-w-[280px] shrink-0 aspect-[3/4] rounded-2xl bg-surface/80 border border-border overflow-hidden relative shadow-2xl group">
                   <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent z-10 pointer-events-none" />
                   <img 
-                    src="/images/zann_grayscale_photo.jpg" 
+                    src="/images/ZannEver.png" 
                     alt="Bendzanu Kamagifi" 
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+                    className="w-full h-full object-cover grayscale hover:grayscale-0 group-hover:scale-105 transition-all duration-700 ease-out"
                   />
                 </div>
 
