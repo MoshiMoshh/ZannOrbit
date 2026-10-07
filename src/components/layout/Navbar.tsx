@@ -99,7 +99,7 @@ export function Navbar() {
         
         <div className="flex items-center justify-between px-6 lg:px-8 py-4 transition-all duration-500" id="nav-inner">
           <a href="#home" className="text-xl font-bold tracking-tight text-primary hover:opacity-80 transition-opacity">
-            ZANN.
+            ZannEnemies
           </a>
 
           <div className="hidden lg:flex items-center gap-2">
