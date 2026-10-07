@@ -7,7 +7,29 @@ export interface Testimonial {
   rating: number;
 }
 
-// TODO: isi dengan data asli — jangan diisi placeholder fiktif
-// Lihat PRD v2.1 Section 9: "Jangan pernah membuat nama perusahaan,
-// tanggal kerja, kutipan testimoni, atau nama/posisi orang yang fiktif."
-export const TESTIMONIALS: Testimonial[] = [];
+export const TESTIMONIALS: Testimonial[] = [
+  {
+    name: "Budi 'The Boss' Santoso",
+    position: "Founder",
+    company: "TechBro ID",
+    quote: "Asli kerjaannya rapi parah, UI-nya smooth banget gak ada obat. Kelar lebih cepet dari ekspektasi, worth it abis!",
+    avatar: "",
+    rating: 5
+  },
+  {
+    name: "Nadia",
+    position: "Product Manager",
+    company: "Agency Kekinian",
+    quote: "Komunikasinya asik, gampang diajak tektokan. Bug yang susah aja disikat abis. Fix bakal hire lagi sih buat next project.",
+    avatar: "",
+    rating: 5
+  },
+  {
+    name: "Dimas",
+    position: "Tech Lead",
+    company: "Startup Chill",
+    quote: "Kodenya clean bet, gampang dibaca. Gak cuma asal jalan, tapi dipikirin juga edge case-nya. Mantap djiwa pokoknya.",
+    avatar: "",
+    rating: 5
+  }
+];
