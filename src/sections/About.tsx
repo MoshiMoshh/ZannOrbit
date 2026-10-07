@@ -47,7 +47,7 @@ export function About() {
           {/* About Panel */}
           <RevealOnScroll>
             <GlassCard className="p-6 md:p-10 lg:p-12">
-              <SectionTitle eyebrow="// ABOUT ME" className="mb-8" />
+              <SectionTitle eyebrow="ABOUT ME" className="mb-8" />
               
               <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-center">
                 {/* Photo */}
@@ -85,7 +85,7 @@ export function About() {
           <RevealOnScroll delay={0.2}>
             <section id="skills" className="scroll-mt-32">
               <GlassCard className="p-6 md:p-10 lg:p-12">
-                <SectionTitle eyebrow="// MY SKILLS" className="mb-10" />
+                <SectionTitle eyebrow="MY SKILLS" className="mb-10" />
                 
                 <div className="grid md:grid-cols-2 gap-x-12 gap-y-6">
                   {SKILLS.map((skill, idx) => (

@@ -9,7 +9,7 @@ export function Services() {
     <section id="services" className="py-24 relative bg-surface/30 border-y border-border/50">
       <Container>
         <RevealOnScroll>
-          <SectionTitle eyebrow="// SERVICES" className="mb-16" />
+          <SectionTitle eyebrow="SERVICES" className="mb-16" />
         </RevealOnScroll>
 
         <RevealOnScroll className="grid md:grid-cols-2 lg:grid-cols-3 gap-6" stagger={0.1}>

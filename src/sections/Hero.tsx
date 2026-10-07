@@ -13,7 +13,7 @@ import { motion } from 'framer-motion';
 const SOCIAL_LINKS = [
   { icon: Globe, href: 'https://github.com/MoshiMoshh', label: 'GitHub' },
   { icon: Briefcase, href: 'https://linkedin.com/in/bendzanukamagifi', label: 'LinkedIn' },
-  { icon: Camera, href: 'https://instagram.com/moshimoshh.zann', label: 'Instagram' },
+  { icon: Camera, href: 'https://instagram.com/zannvoid', label: 'Instagram' },
   { icon: Mail, href: 'mailto:contact@zannvoid.my.id', label: 'Email' },
 ];
 
@@ -114,7 +114,7 @@ export function Hero() {
           {/* Left Column */}
           <div className="flex flex-col gap-6 lg:col-span-5 lg:pl-12 xl:pl-16">
             <RevealOnScroll>
-              <Badge label="// HELLO WORLD." />
+              <Badge label="HELLO WORLD." />
             </RevealOnScroll>
             
             <h1 

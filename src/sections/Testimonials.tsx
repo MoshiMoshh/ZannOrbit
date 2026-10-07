@@ -9,7 +9,7 @@ export function Testimonials() {
     <section id="testimonials" className="py-24 relative">
       <Container>
         <RevealOnScroll>
-          <SectionTitle eyebrow="// CLIENT STORIES" />
+          <SectionTitle eyebrow="CLIENT STORIES" />
         </RevealOnScroll>
 
         {TESTIMONIALS.length === 0 ? (

@@ -75,7 +75,7 @@ export function Navbar() {
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
-        className="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-[1320px] rounded-2xl shadow-[0_4px_30px_rgba(0,0,0,0.1)]"
+        className="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-[1320px] rounded-full shadow-[0_4px_30px_rgba(0,0,0,0.1)]"
         style={{
           backgroundColor: `rgba(255, 255, 255, 0.03)`,
           backdropFilter: 'blur(12px)',
@@ -115,8 +115,8 @@ export function Navbar() {
                   <span className="relative z-10">{item.label}</span>
                   {activeItem === item.label && (
                     <motion.div
-                      layoutId="navbar-active-pill"
-                      className="absolute inset-0 bg-white/10 rounded-full"
+                      layoutId="navbar-active-dot"
+                      className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-1 h-1 bg-primary rounded-full"
                       transition={{ type: "spring", stiffness: 350, damping: 30 }}
                     />
                   )}
@@ -126,8 +126,8 @@ export function Navbar() {
           </div>
 
           <div className="hidden sm:block">
-            <Button variant="outline" size="sm" icon={ArrowUpRight} magnetic>
-              Hire Me
+            <Button variant="primary" size="sm" icon={ArrowUpRight} magnetic>
+              HIRE ME
             </Button>
           </div>
 

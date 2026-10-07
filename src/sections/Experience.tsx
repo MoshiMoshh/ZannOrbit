@@ -9,7 +9,7 @@ export function Experience() {
     <section id="experience" className="py-24 relative">
       <Container>
         <RevealOnScroll>
-          <SectionTitle eyebrow="// EXPERIENCE" />
+          <SectionTitle eyebrow="EXPERIENCE" />
         </RevealOnScroll>
 
         {EXPERIENCES.length === 0 ? (

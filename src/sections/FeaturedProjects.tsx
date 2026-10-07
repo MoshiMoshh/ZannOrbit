@@ -12,7 +12,7 @@ export function FeaturedProjects() {
       <Container>
         <RevealOnScroll>
           <SectionTitle 
-            eyebrow="// FEATURED PROJECTS" 
+            eyebrow="FEATURED PROJECTS" 
             action={{ label: 'VIEW ALL PROJECTS', href: '#projects' }} 
           />
         </RevealOnScroll>
