@@ -9,6 +9,9 @@ import { Hero } from './sections/Hero'
 import { About } from './sections/About'
 import { Experience } from './sections/Experience'
 import { FeaturedProjects } from './sections/FeaturedProjects'
+import { Services } from './sections/Services'
+import { Testimonials } from './sections/Testimonials'
+import { TechStackMarquee } from './sections/TechStackMarquee'
 import { Contact } from './sections/Contact'
 
 function App() {
@@ -25,8 +28,11 @@ function App() {
           <main>
             <Hero />
             <About />
-            <Experience />
             <FeaturedProjects />
+            <Services />
+            <Experience />
+            <Testimonials />
+            <TechStackMarquee />
             <Contact />
           </main>
 

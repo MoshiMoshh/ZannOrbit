@@ -16,8 +16,8 @@ export function Experience() {
           <RevealOnScroll delay={0.2}>
             <GlassCard className="p-12 text-center" blur={15}>
               <div className="text-secondary/50 font-mono mb-4 text-4xl">{`{...}`}</div>
-              <h3 className="text-xl font-bold text-primary mb-2">Experience Data Loading</h3>
-              <p className="text-secondary">This section is currently being updated. Please check back later.</p>
+              <h3 className="text-xl font-bold text-primary mb-2">Segera Hadir</h3>
+              <p className="text-secondary">Section ini lagi diupdate dengan data yang valid.</p>
             </GlassCard>
           </RevealOnScroll>
         ) : (

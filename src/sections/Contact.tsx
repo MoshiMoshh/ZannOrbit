@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/Button';
 import { RevealOnScroll } from '@/components/animation/RevealOnScroll';
 
 const CONTACT_INFO = [
-  { icon: Mail, label: 'Email', value: 'zannthemida@gmail.com' },
+  { icon: Mail, label: 'Email', value: 'contact@zannvoid.my.id' },
   { icon: MapPin, label: 'Location', value: 'Indonesia' },
   { icon: Briefcase, label: 'Availability', value: 'Freelance / Fulltime' },
 ];
@@ -25,7 +25,7 @@ export function Contact() {
                 </h2>
                 <div className="flex items-center gap-2 justify-center lg:justify-start text-secondary text-sm mt-3">
                   <ArrowUpRight className="w-5 h-5" />
-                  <span>Punya proyek menarik? Yuk, diskusikan ide kamu bersama saya.</span>
+                  <span>Ada project atau ide? Langsung hubungi aja.</span>
                 </div>
               </div>
 
@@ -42,7 +42,7 @@ export function Contact() {
 
               {/* Right: CTA */}
               <div className="shrink-0">
-                <Button variant="primary" size="lg" icon={ArrowUpRight} magnetic href="mailto:zannthemida@gmail.com">
+                <Button variant="primary" size="lg" icon={ArrowUpRight} magnetic href="mailto:contact@zannvoid.my.id">
                   CONTACT ME
                 </Button>
               </div>

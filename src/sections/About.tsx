@@ -54,16 +54,15 @@ export function About() {
                 <div className="w-full max-w-[280px] shrink-0 aspect-[3/4] rounded-2xl bg-surface/80 border border-border overflow-hidden relative shadow-2xl group">
                   <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent z-10 pointer-events-none" />
                   <img 
-                    src="/images/ZannEver.png" 
-                    alt="Zann Profile" 
+                    src="/images/zann_grayscale_photo.jpg" 
+                    alt="Bendzanu Kamagifi" 
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                   />
                 </div>
 
-                {/* Bio */}
                 <div className="flex flex-col justify-center flex-1">
                   <p className="text-secondary text-base lg:text-lg leading-relaxed mb-10 max-w-2xl">
-                    Saya adalah seorang programmer yang fokus pada pengembangan website dan aplikasi web. Saya suka belajar hal baru dan menciptakan solusi digital yang bermanfaat. Membangun antarmuka yang intuitif dan sistem yang efisien adalah passion saya.
+                    Bendzanu Kamagifi — di GitHub kenal sebagai MoshiMoshh. Fokus ke web development yang cepat, clean, dan bisa diandalkan. Lewat ZannVoid Digital, gue nge-build ekosistem web modern pakai Supabase & Vercel, nyambungin multi-payment gateway lokal (Midtrans, Duitku, Paylabs), dan ngulik integrasi AI (Gemini API & OpenAI) plus bot Telegram. Soal kualitas kode, gue pakai CodeRabbit buat automated review dan GitHub Copilot buat development.
                   </p>
 
                   {/* Stats */}

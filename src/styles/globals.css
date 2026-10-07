@@ -10,9 +10,9 @@
   --color-secondary: #a1a1aa;
   --color-accent: #d4d4d8;
   --color-neutral-state: #e5e5e5;
-  --color-error: #ef4444; /* ASUMSI: warna error merah untuk validasi form */
+  --color-error: #ef4444;
 
-  /* Font Families - ASUMSI: Geist Sans dan Geist Mono */
+  /* Font Families */
   --font-sans: "Geist Sans", "Inter", sans-serif;
   --font-mono: "Geist Mono", monospace;
 

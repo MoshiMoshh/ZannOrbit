@@ -10,32 +10,32 @@ export interface Service {
 export const SERVICES: Service[] = [
   {
     title: 'Web Development',
-    description: 'Custom, responsive websites built with modern frameworks to deliver fast, secure, and scalable solutions.',
+    description: 'Bikin website dari nol pakai stack modern — React, Next.js, Laravel, atau Node.js. Fokus ke performa dan arsitektur yang scalable.',
     icon: Code,
   },
   {
     title: 'UI Design',
-    description: 'Beautiful, intuitive user interfaces crafted with a focus on user experience and premium aesthetics.',
+    description: 'Desain antarmuka yang bersih, intuitif, dan terasa premium. Bukan template — tiap elemen dirancang sesuai kebutuhan produk.',
     icon: Layout,
   },
   {
     title: 'Dashboard',
-    description: 'Complex data visualization and management dashboards designed for ease of use and performance.',
+    description: 'Dashboard admin dan data visualization yang gampang dipakai. Integrasi real-time data, chart, dan manajemen konten.',
     icon: LayoutDashboard,
   },
   {
     title: 'Landing Page',
-    description: 'High-converting landing pages with engaging animations and optimized load times to maximize impact.',
+    description: 'Landing page yang cepat, engaging, dan dioptimasi buat konversi. Animasi smooth tanpa ngorbanin loading time.',
     icon: MonitorSmartphone,
   },
   {
     title: 'API Development',
-    description: 'Robust and secure RESTful APIs to power your web and mobile applications seamlessly.',
+    description: 'RESTful API yang solid buat nyambungin frontend, mobile app, atau integrasi third-party kayak payment gateway dan bot Telegram.',
     icon: Server,
   },
   {
     title: 'Website Optimization',
-    description: 'Performance tuning, SEO enhancement, and accessibility improvements for existing websites.',
+    description: 'Audit performa, perbaikan SEO, dan aksesibilitas buat website yang udah jalan. Target Lighthouse 100 di semua kategori.',
     icon: Zap,
   },
 ];

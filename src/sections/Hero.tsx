@@ -11,10 +11,10 @@ import { useCursor } from '@/context/CursorContext';
 import { motion } from 'framer-motion';
 
 const SOCIAL_LINKS = [
-  { icon: Globe, href: '#', label: 'GitHub' },
-  { icon: Briefcase, href: '#', label: 'LinkedIn' },
-  { icon: Camera, href: '#', label: 'Instagram' },
-  { icon: Mail, href: 'mailto:hello@zann.dev', label: 'Email' },
+  { icon: Globe, href: 'https://github.com/MoshiMoshh', label: 'GitHub' },
+  { icon: Briefcase, href: 'https://linkedin.com/in/bendzanukamagifi', label: 'LinkedIn' },
+  { icon: Camera, href: 'https://instagram.com/moshimoshh.zann', label: 'Instagram' },
+  { icon: Mail, href: 'mailto:contact@zannvoid.my.id', label: 'Email' },
 ];
 
 const TECH_ICONS = [
@@ -32,7 +32,7 @@ export function Hero() {
   const { setVariant } = useCursor();
   const headingRef = useRef<HTMLHeadingElement>(null);
   const [typedText, setTypedText] = useState('');
-  const fullText = "I build modern, fast and scalable websites with premium user experiences.";
+  const fullText = "Fullstack dev — bikin web cepat, automasi payment gateway, dan integrasi AI.";
 
   useEffect(() => {
     let currentText = '';
@@ -127,7 +127,7 @@ export function Hero() {
 
             <RevealOnScroll delay={0.4}>
               <h2 className="text-xl md:text-2xl font-semibold text-primary">
-                Full Stack Web Developer
+                Fullstack Developer · ZannVoid Digital
               </h2>
               <p className="text-secondary text-base max-w-[420px] mt-4 leading-relaxed min-h-[72px]">
                 {typedText}
@@ -139,7 +139,7 @@ export function Hero() {
               <Button variant="primary" icon={ArrowUpRight} magnetic>
                 View My Work
               </Button>
-              <Button variant="outline" icon={Download} magnetic>
+              <Button variant="outline" icon={Download} href="/cv/CV_Bendzanu_Kamagifi.pdf" magnetic>
                 Download CV
               </Button>
             </RevealOnScroll>

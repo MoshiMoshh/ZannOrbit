@@ -8,10 +8,10 @@ interface SEOProps {
 }
 
 export function SEO({
-  title = 'Zann. — Premium Full Stack Developer',
-  description = 'I build modern, fast and scalable websites with premium user experiences.',
-  url = 'https://zannvoid.my.id', // ASUMSI domain
-  image = 'https://zann.dev/og-image.jpg',
+  title = 'Zann. — Fullstack Developer',
+  description = 'Fullstack developer — web cepat, automasi payment gateway, dan integrasi AI.',
+  url = 'https://zannvoid.my.id',
+  image = 'https://zannvoid.my.id/og-image.jpg',
 }: SEOProps) {
   return (
     <Helmet>
@@ -36,12 +36,13 @@ export function SEO({
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Person",
-          "name": "Zann",
+          "name": "Bendzanu Kamagifi",
+          "alternateName": "Zann",
           "url": url,
-          "jobTitle": "Full Stack Web Developer",
+          "jobTitle": "Fullstack Web Developer",
           "sameAs": [
-            "https://github.com/zannvoid",
-            "https://linkedin.com/in/Bendzanu Kamagifi"
+            "https://github.com/MoshiMoshh",
+            "https://linkedin.com/in/bendzanukamagifi"
           ]
         })}
       </script>
