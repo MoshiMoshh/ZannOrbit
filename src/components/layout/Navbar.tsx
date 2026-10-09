@@ -26,18 +26,6 @@ export function Navbar() {
   useEffect(() => {
     if (!navRef.current) return;
 
-    // Navbar shrink/blur on scroll animation
-    const ctx = gsap.context(() => {
-      ScrollTrigger.create({
-        start: 'top -80px',
-        end: 99999,
-        toggleClass: {
-          className: 'nav-scrolled',
-          targets: navRef.current,
-        },
-      });
-    }, navRef);
-
     // Setup intersection observer for active states
     const observer = new IntersectionObserver(
       (entries) => {
@@ -55,14 +43,23 @@ export function Navbar() {
     document.querySelectorAll('section[id]').forEach((section) => observer.observe(section));
 
     const handleScroll = () => {
+      if (window.scrollY > 50) {
+        navRef.current?.classList.add('nav-scrolled');
+      } else {
+        navRef.current?.classList.remove('nav-scrolled');
+      }
+
       if (window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 50) {
         setActiveItem('Contact');
       }
     };
+
+    // Initial check
+    handleScroll();
+
     window.addEventListener('scroll', handleScroll, { passive: true });
 
     return () => {
-      ctx.revert();
       observer.disconnect();
       window.removeEventListener('scroll', handleScroll);
     };
@@ -72,16 +69,16 @@ export function Navbar() {
     <>
       <motion.nav
         ref={navRef}
-        initial={{ y: -100, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
+        initial={{ y: -100, x: "-50%", opacity: 0 }}
+        animate={{ y: 0, x: "-50%", opacity: 1 }}
         transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
-        className="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-[1320px] rounded-full shadow-[0_4px_30px_rgba(0,0,0,0.1)]"
+        className="fixed top-6 left-1/2 z-50 w-[95%] max-w-[1320px] rounded-full shadow-[0_4px_30px_rgba(0,0,0,0.1)]"
         style={{
           backgroundColor: `rgba(255, 255, 255, 0.03)`,
           backdropFilter: 'blur(12px)',
           WebkitBackdropFilter: 'blur(12px)',
           border: `1px solid ${TOKENS.colors.border}`,
-          transition: 'all 0.6s cubic-bezier(0.16, 1, 0.3, 1)',
+          transition: 'max-width 0.6s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.6s cubic-bezier(0.16, 1, 0.3, 1), padding 0.6s cubic-bezier(0.16, 1, 0.3, 1), top 0.6s cubic-bezier(0.16, 1, 0.3, 1), border-radius 0.6s cubic-bezier(0.16, 1, 0.3, 1), backdrop-filter 0.6s cubic-bezier(0.16, 1, 0.3, 1)',
         }}
       >
         <style>{`
