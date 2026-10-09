@@ -4,7 +4,6 @@ import SplitType from 'split-type';
 import { ArrowUpRight, Download, Globe, Briefcase, Camera, Mail, TerminalSquare } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
 import { Button } from '@/components/ui/Button';
-import { Badge } from '@/components/ui/Badge';
 import { GlassCard } from '@/components/ui/GlassCard';
 import { RevealOnScroll } from '@/components/animation/RevealOnScroll';
 import { useCursor } from '@/context/CursorContext';
