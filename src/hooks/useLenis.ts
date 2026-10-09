@@ -18,6 +18,19 @@ export function useLenis() {
 
     lenis.on('scroll', ScrollTrigger.update);
 
+    // Global click handler for anchor links
+    const handleAnchorClick = (e: MouseEvent) => {
+      const target = (e.target as HTMLElement).closest('a');
+      const href = target?.getAttribute('href');
+      
+      if (href?.startsWith('#') && href.length > 1) {
+        e.preventDefault();
+        lenis.scrollTo(href, { offset: -100 });
+      }
+    };
+
+    document.addEventListener('click', handleAnchorClick);
+
     gsap.ticker.add((time) => {
       lenis.raf(time * 1000);
     });
@@ -26,6 +39,7 @@ export function useLenis() {
 
     return () => {
       lenis.destroy();
+      document.removeEventListener('click', handleAnchorClick);
       gsap.ticker.remove((time) => lenis.raf(time * 1000));
     };
   }, []);
